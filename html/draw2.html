@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.16.0/d3.min.js"></script>
+        <style>
+            .container {
+                text-align: center;
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row" id="options">
+                <select name="" id="color-picker">
+                    <option value="red">Red</option>
+                    <option value="black">Black</option>
+                    <option value="green">Green</option>
+                    <option value="cyan">Cyan</option>
+                </select>
+                <select name="" id="thickness-picker">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3" selected>3</option>
+                    <option value="5">5</option>
+                    <option value="8">8</option>
+                    <option value="10">10</option>
+                </select>
+                <button id="erase">Erase</button>
+            </div>
+            <svg id="draw"></svg>
+        </body>
+        </div>
+    <script src="../js/draw2.js"> </script>
+</html>
